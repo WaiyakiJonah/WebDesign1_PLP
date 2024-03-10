@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        main {
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .grid-item {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Welcome to Technology, Nature and Food website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome Friend!See and Explore Technology in Agriculture through the links below:</p>
+            <a href="https://cdn.pixabay.com/photo/2016/08/12/05/31/water-1587716_1280.jpg"><img src="https://cdn.pixabay.com/photo/2016/08/12/05/31/water-1587716_1280.jpg" alt="Technology in Agriculture"></a>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="grid-container">
+                <div class="grid-item"><a href="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg"><img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg" alt="Forests in Nature"></a>Forests in Nature</div>
+                <div class="grid-item"><a href="https://cdn.pixabay.com/photo/2014/10/01/16/10/mushrooms-468751_1280.jpg"><img src="https://cdn.pixabay.com/photo/2014/10/01/16/10/mushrooms-468751_1280.jpg" alt="Mushrooms in Nature"></a>Mushrooms in Nature</div>
+                <div class="grid-item"><a href="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg"><img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg" alt="Oceans in Nature"></a>Oceans in Nature</div>
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_1280.jpg"><img src="https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_1280.jpg" alt="Important Vegetables"></a> Vegetables</li>
+                <li><a href="https://cdn.pixabay.com/photo/2015/08/25/03/50/herbs-906140_1280.jpg"><img src="https://cdn.pixabay.com/photo/2015/08/25/03/50/herbs-906140_1280.jpg" alt="Assorted Spices"></a> Spices and Herbs</li>
+                <li><a href="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg"><img src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg" alt="Meat"></a> Meat</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Image Links</p>
+    </footer>
+</body>
+</html>
+
+
+    
