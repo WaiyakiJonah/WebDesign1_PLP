@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        main {
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .grid-item {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<h1> Forms in HTML</h1>
+<br>
+<form>
+<label for="'name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter Your Name">
+<br>
+<label for="'date">Date of birth:</label>
+<input type="date" id="Date of birth" name="date" placeholder="Enter Your Date of Birth">
+<br>
+<label > Select your Gender</label>
+<input type="checkbox" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="checkbox" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<br>
+<label for="telephone">Telephone Number:</label>
+<input type="tel" id="telephone" name="telephone" placeholder="Enter Your telephone Number"required>
+<br>
+<br>
+<label for="email">Email Address:</label>
+<input type="email" id="Email" name="Email" placeholder="Enter Your email address"required>
+<br>
+<br>
+<label for="course">Telephone Number:</label>
+<input type="text" id="course" name="course" placeholder="Course Choice" required>
+<br>
+<input type="submit" value="Register">
+<input type="button" value="Cancel" onclick="window.location.href='index.html'"
+</form>
